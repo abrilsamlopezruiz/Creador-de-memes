@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #options {
+    margin: 20px;
+  }
+  #memeContenedor {
+    text-align: center;
+   margin-top: 20px;
+   background-position: center top;
+   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+   position: relative
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  select,
+  input[type="color"] {
+    margin-top: 5px;
+  }
+  
+  

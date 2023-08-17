@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Creador de memes</title>
+</head>
+<body>
+  <h1>Crea tu meme</h1>
+  
+  <div id="options">
+    <label for="tipoMeme">Elige que tipo de memes quieres crear:</label>
+    <select id="tipoMeme">
+      <option value="perritos">Perritos</option>
+      <option value="gatitos">Gatitos</option>
+      <option value="aimep3">Aimep3</option>
+    </select>
+    <label for="imagenMeme">Elige tu imagen</label>
+    <select id="imagenMeme">
+      <!-- Categoria1 -->
+      <option value="Imagenes/Perrito1.jpg">Imagen 1 Perritos</option>
+      <option value="Imagenes/Perrito2.jpg">Imagen 2 Perritos</option>
+      <option value="Imagenes/Perrito3.jpg">Imagen 3 Perritos</option>
+      
+      <!--Categoria2 -->
+      <option value="Imagenes/Gatito1.jpg">Imagen 1 Gatitos</option>
+      <option value="Imagenes/Gatito2.jpg">Imagen 2 Gatitos</option>
+      <option value="Imagenes/Gatito3.jpg">Imagen 3 Gatitos</option>
+      
+      <!--Categoria3 -->
+      <option value="Imagenes/Aimep31.jpg">Imagen 1 Aimep3</option>
+      <option value="Imagenes/Aimep32.jpg">Imagen 2 Aimep3</option>
+      <option value="Imagenes/Aimep33.jpg">Imagen 3 Aimep3</option>
+    </select>
+    
+    <label for="escribe">Escribe tu meme</label>
+    <input type="text" id="escribe">
+    
+    <label for="creador">Ponle tu nombre</label>
+    <input type="text" id="creador">
+    
+    <label for="fondo">Elige el color de Fondo</label>
+    <input type="color" id="fondo">
+    
+    <label for="fontType">Elige el tipo de letra</label>
+    <select id="fontType">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Courier New, monospace">Courier New</option>
+      <option value="Georgia, serif">Georgia</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+      <option value="Trebuchet MS, sans-serif">Trebuchet MS</option>
+    </select>
+    
+    <button id="createMeme">Crealo</button>
+  </div>
+  
+  <div id="memeContenedor" class="hidden">
+    <img id="mostrarMeme" src="" alt="Meme">
+    <div id="memeTexto"></div>
+  </div>
+  <script src="codigo.js"></script>
+</body>
+</html>
